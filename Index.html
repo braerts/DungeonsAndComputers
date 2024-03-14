@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css"/> 
+    <link rel="icon" href="src/icon.png">
+    <title>Dungeons and Computers</title>
+</head>
+<body>
+    <audio id="backgroundMusic" muted>
+        <source src="src/ambient.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="token-container">
+        <div class="token">
+            <input type="text" id="token-input" placeholder="Please enter your token...">
+            <button id="token-button"><i class="fa-solid fa-paper-plane-top"></i></button>
+        </div>
+    </div>
+
+    <div class="game-box">
+        <div class="chat-container">
+            <div class="chat">
+                <div id="chat-output"></div>
+                <div id="input-container">
+                    <input type="text" id="user-input" placeholder="What will you do...">
+                    <div id="loading-icon" style="display: none;">
+                        <img id="loadingIcon" src="src/SimpleLoadingIcon.gif">
+                    </div>
+                </div>
+            </div>
+            <div id="button-container">
+                <button id="send-button"><i class="fa-solid fa-paper-plane-top"></i></button>
+                <button id="save-button"><i class="fa-solid fa-download"></i></button>
+                <input type="file" id="uploadFile" accept=".json" style="display: none;">
+                <button id="upload-button"><i class="fa-solid fa-upload"></i></button>
+                <button id="play-button"><i class="fa-solid fa-fw fa-music-slash"></i><i class="fa-solid fa-fw fa-music" style="display: none;"></i></button>
+            </div>
+        </div>
+        <div id="dice-container">
+            <img id="dice-image" src="src/dice.png" alt="Dice" onclick="toggleDiceMenu()">
+            <div id="dice-menu" style="display: none;">
+                <div class="dice-option" onclick="rollDice(4)"><img id="d4-image" src="src/D4.png"></div>
+                <div class="dice-option" onclick="rollDice(6)"><img id="d6-image" src="src/D6.png"></div>
+                <div class="dice-option" onclick="rollDice(8)"><img id="d8-image" src="src/D8.png"></div>
+                <div class="dice-option" onclick="rollDice(10)"><img id="d10-image" src="src/D10.png"></div>
+                <div class="dice-option" onclick="rollDice(12)"><img id="d12-image" src="src/D12.png"></div>
+                <div class="dice-option" onclick="rollDice(20)"><img id="d20-image" src="src/D20.png"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts.js" defer></script>
+    <script src="Dice.js" defer></script>
+    <script src="Music.js" defer></script>
+</body>
+</html>
