@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.5.0/css/all.css"/> 
-    <link rel="icon" href="src/icon.png">
+    <link rel="icon" href="icon.png">
     <title>Dungeons and Computers</title>
 </head>
 <body>
     <audio id="backgroundMusic" muted>
-        <source src="src/ambient.mp3" type="audio/mp3">
+        <source src="ambient.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
@@ -28,7 +28,7 @@
                 <div id="input-container">
                     <input type="text" id="user-input" placeholder="What will you do...">
                     <div id="loading-icon" style="display: none;">
-                        <img id="loadingIcon" src="src/SimpleLoadingIcon.gif">
+                        <img id="loadingIcon" src="SimpleLoadingIcon.gif">
                     </div>
                 </div>
             </div>
@@ -41,14 +41,14 @@
             </div>
         </div>
         <div id="dice-container">
-            <img id="dice-image" src="src/dice.png" alt="Dice" onclick="toggleDiceMenu()">
+            <img id="dice-image" src="dice.png" alt="Dice" onclick="toggleDiceMenu()">
             <div id="dice-menu" style="display: none;">
-                <div class="dice-option" onclick="rollDice(4)"><img id="d4-image" src="src/D4.png"></div>
-                <div class="dice-option" onclick="rollDice(6)"><img id="d6-image" src="src/D6.png"></div>
-                <div class="dice-option" onclick="rollDice(8)"><img id="d8-image" src="src/D8.png"></div>
-                <div class="dice-option" onclick="rollDice(10)"><img id="d10-image" src="src/D10.png"></div>
-                <div class="dice-option" onclick="rollDice(12)"><img id="d12-image" src="src/D12.png"></div>
-                <div class="dice-option" onclick="rollDice(20)"><img id="d20-image" src="src/D20.png"></div>
+                <div class="dice-option" onclick="rollDice(4)"><img id="d4-image" src="D4.png"></div>
+                <div class="dice-option" onclick="rollDice(6)"><img id="d6-image" src="D6.png"></div>
+                <div class="dice-option" onclick="rollDice(8)"><img id="d8-image" src="D8.png"></div>
+                <div class="dice-option" onclick="rollDice(10)"><img id="d10-image" src="D10.png"></div>
+                <div class="dice-option" onclick="rollDice(12)"><img id="d12-image" src="D12.png"></div>
+                <div class="dice-option" onclick="rollDice(20)"><img id="d20-image" src="D20.png"></div>
             </div>
         </div>
     </div>
